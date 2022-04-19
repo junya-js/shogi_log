@@ -11,11 +11,23 @@
 
 <body>
 
+    @if (Route::has('login'))
+    <div class=".order-1 hidden fixed top-0 right-0 px-6 py-4 sm:block">
+        @auth
+        <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
+        @else
+        <a href="{{ route('login') }}" class="text-sm text-white-700 dark:text-white-500 underline">Log in</a>
+
+        @if (Route::has('register'))
+        <a href="{{ route('register') }}" class="ml-4 text-sm text-white-700 dark:text-white-500 underline">Register</a>
+        @endif
+        @endauth
+    </div>
+    @endif
+
     <div class="flex justify-center relative">
-        <img class="bg-cover min-h-screen" src=" {{ asset('image/istockphoto-617907652-612x612.jpeg') }}" alt="">
+        <img class=".order-5 bg-cover min-h-screen" src=" {{ asset('image/istockphoto-617907652-612x612.jpeg') }}" alt="">
         <h2 class="text-8xl top-40 text-white absolute">将棋log</h2>
-        {{-- 画像の上にh2 --}}
-        {{-- 画像の上にbutton --}}
         <button
             class="absolute right-80 bottom-80 gray-600 hover:bg-blue-400 text-black font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
             始める
