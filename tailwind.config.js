@@ -16,4 +16,6 @@ module.exports = {
     },
 
     plugins: [require('@tailwindcss/forms')],
+
+    mode: process.env.NODE_ENV ? 'jit' : undefined,
 };

@@ -12,18 +12,19 @@
 <body>
 
     <div class="flex justify-center relative">
-        <h2 class="absolute">将棋log</h2>
-        {{-- 画像の上にh2 --}}
         <img class="bg-cover min-h-screen" src=" {{ asset('image/istockphoto-617907652-612x612.jpeg') }}" alt="">
+        <h2 class="text-8xl top-40 text-white absolute">将棋log</h2>
+        {{-- 画像の上にh2 --}}
         {{-- 画像の上にbutton --}}
         <button
-            class="absolute gray-600 hover:bg-blue-400 text-black font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
-            Button
+            class="absolute right-80 bottom-80 gray-600 hover:bg-blue-400 text-black font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+            始める
         </button>
     </div>
-
-    <h3 class="text-red-600">What app is it?</h3>
-    <p>将棋ウォーズの棋譜を見ながら検討、気付きをまとめる将棋ノートアプリです</p>
+    <div class="justify-center">
+        <h3 class="text-center text-red-600">What app is it?</h3>
+        <p class="text-center">将棋ウォーズの棋譜を見ながら検討、気付きをまとめる将棋ノートアプリです</p>
+    </div>
 
 </body>
 
