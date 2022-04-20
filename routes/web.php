@@ -18,7 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::view('/top', 'top');
+// Route::view('/top', 'top');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
