@@ -11,20 +11,6 @@
 
 <body>
 
-    @if (Route::has('login'))
-    <div class=".bg-yellow-200 hidden fixed top-0 right-0 px-6 py-4 sm:block">
-        @auth
-        <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
-        @else
-        <a href="{{ route('login') }}" class="text-sm text-red-gray dark:text-gray-500 underline">Log in</a>
-
-        @if (Route::has('register'))
-        <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-white-500 underline">Register</a>
-        @endif
-        @endauth
-    </div>
-    @endif
-
     <div class="flex justify-center relative">
         <img class="bg-cover min-h-screen" src=" {{ asset('image/istockphoto-617907652-612x612.jpeg') }}" alt="">
         <h2 class="text-8xl top-40 text-white absolute">将棋log</h2>
