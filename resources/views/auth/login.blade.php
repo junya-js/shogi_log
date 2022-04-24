@@ -2,7 +2,11 @@
     <x-auth-card>
         <x-slot name="logo">
             <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
+                <div class="shrink-0 flex items-center">
+                    <a href="{{ route('post.index') }}">
+                        <img src="{{asset('logo/shogi_log.png')}}" style="max-height:80px;">
+                    </a>
+                </div>
             </a>
         </x-slot>
 

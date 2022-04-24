@@ -6,7 +6,7 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('post.index') }}">
-                        <img src="{{asset('logo/IMG_0179.PNG')}}" style="max-height:80px;">
+                        <img src="{{asset('logo/shogi_log.png')}}" style="max-height:80px;">
                     </a>
                 </div>
 
