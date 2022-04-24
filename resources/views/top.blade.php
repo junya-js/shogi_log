@@ -10,9 +10,12 @@
 </head>
 
 <body>
-    <div class="">
 
         <div class="">
+            <section class="absolute w-full h-screen">
+                <img src=" {{ asset('image/EB16CA6D-B6D7-4A83-B9AB-42EAC7030639.jpg') }}" class="object-cover w-full h-full"
+                    alt="Image alt text" />
+            </section>
             @if (Route::has('login'))
             <div class="hidden fixed top-0 right-20 px-6 py-4 sm:block">
                 @auth
@@ -26,14 +29,10 @@
             </div>
             @endif
 
-            <section class="w-full h-screen">
-                <img src=" {{ asset('image/EB16CA6D-B6D7-4A83-B9AB-42EAC7030639.jpg') }}" class="object-cover w-full h-full"
-                    alt="Image alt text" />
-            </section>
 
-                <div class="absolute top-0 bottom-0  m-auto ">
+                <div class="absolute top-1/2 left-1/2 -translate-y-2/4 -translate-x-2/4 m-auto">
                     <h2 class=" text-9xl text-white">Shogi_log</h2>
-                    <h3 class="text-red-600">What app is it?</h3>
+                    <h3 class="mt-20 text-center text-xl text-orange-600">What app is it?</h3>
                 {{-- <div class="mt-10">
                     <p class="text-center">将棋ウォーズの棋譜を見ながら検討、気付きをまとめる将棋ノートアプリです</p>
                     <p class="text-center">ご自分の指した棋譜の重要ポイントをスクショし、その棋譜の内容と一緒に投稿したり、棋神のアドバイスをメモしたりするのにも使えます。</p>
@@ -41,8 +40,6 @@
             </div>
 
         </div>
-    </div>
-
 </body>
 
 </html>
