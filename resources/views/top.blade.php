@@ -15,7 +15,10 @@
 </head>
 
 <body>
-
+<div id="splash">
+    <div id="splash_text"></div>
+    <!--/splash-->
+</div>
     <div class="">
         <section class="absolute w-full h-screen">
             <img src=" {{ asset('image/EB16CA6D-B6D7-4A83-B9AB-42EAC7030639.jpg') }}" class="object-cover w-full h-full"
@@ -51,6 +54,16 @@
         </div>
 
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+    <!--IE11用-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <!--不必要なら削除-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
+    <!--不必要なら削除-->
+    <!--自作のJS-->
+    <script src="{{ asset('js/style.js') }}"></script>
 </body>
 
 </html>
