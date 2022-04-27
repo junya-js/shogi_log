@@ -66,8 +66,8 @@ h2, label{
 	transform: translate(-50%, -50%);
 	color: #fff;
 }
-
 /*IE11対策用バーの線の高さ※対応しなければ削除してください*/
 #splash_text svg{
     height: 2px;
 }
+/* ここまでログイン画面 */

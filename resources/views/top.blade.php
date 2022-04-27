@@ -11,17 +11,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Shogi_log</title>
 </head>
 
 <body>
-<div id="splash">
-    <div id="splash_text"></div>
-    <!--/splash-->
-</div>
-    <div class="">
+    {{-- ローディング画面 --}}
+    <div id="splash">
+        <div id="splash_text"></div>
+    </div>
+
+    <div class=".container">
         <section class="absolute w-full h-screen">
-            <img src=" {{ asset('image/EB16CA6D-B6D7-4A83-B9AB-42EAC7030639.jpg') }}" class="object-cover w-full h-full"
+            <img src=" {{ asset('image/take.jpg') }}" class="object-cover w-full h-full"
                 alt="Image alt text" />
         </section>
         @if (Route::has('login'))
